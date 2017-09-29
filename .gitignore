@@ -1,0 +1,13 @@
+Debug
+Release
+*.vcxproj.filters
+*.user
+*.ncb
+*.suo
+*.sdf
+Win32-Debug
+Win32-Release
+x64-Debug
+x64-Release
+*.old
+*.nc
