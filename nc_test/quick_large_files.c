@@ -61,7 +61,7 @@ main(int argc, char **argv)
 	    cflag |= NC_SHARE;
 	    printf("*** Turned on NC_SHARE for subsequent tests.\n");
 	}
-
+#define TEMP_LARGE ""
 	/* Create a netCDF 64-bit offset format file. Write a value. */
 	sprintf(file_name, "%s/%s", TEMP_LARGE, FILE_NAME);
 	printf("*** Creating %s for 64-bit offset large file test...", file_name);

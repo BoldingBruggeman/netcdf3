@@ -16,7 +16,9 @@
 /* #undef HAVE_ST_BLKSIZE */
 
 /* Define to `long' if <sys/types.h> doesn't define.  */
-/* #undef off_t */
+/*#undef off_t*/
+
+#define snprintf _snprintf
 
 /* Define to `unsigned' if <sys/types.h> doesn't define.  */
 /* #undef size_t */
@@ -39,6 +41,14 @@
 
 /* Define if you don't have the strerror function  */
 /* #undef NO_STRERROR */
+
+// Jorn: defining VISUAL_CPLUSPLUS causes the stdcall calling convention to be set
+// (not compatible with ifort default) - disable this
+#undef VISUAL_CPLUSPLUS 
+
+// Jorn: pgiFortran is compatible with most of ifort
+// only the case of procedure names must still be adjusted in cfortran.h
+#define pgiFortran
 
 /* The number of bytes in a size_t */
 #define SIZEOF_SIZE_T 4

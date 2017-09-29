@@ -72,7 +72,7 @@ main(int argc, char **argv) {
    int x_dims[RANK_x];
 
     printf("\n*** Testing large files, slowly.\n");
-
+#define TEMP_LARGE ""
     sprintf(file_name, "%s/%s", TEMP_LARGE, FILE_NAME);
     printf("*** Creating large file %s...", file_name);
 

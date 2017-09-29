@@ -61,7 +61,7 @@ namespace tst_netcdf
 			this->button1->Name = S"button1";
 			this->button1->TabIndex = 0;
 			this->button1->Text = S"Push Me!";
-			this->button1->Click += new System::EventHandler(this, button1_Click);
+			this->button1->Click += new System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// textBox1
 			// 

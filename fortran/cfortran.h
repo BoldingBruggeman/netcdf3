@@ -195,6 +195,10 @@ only C calling FORTRAN subroutines will work using K&R style.*/
 #endif /* CRAYFortran PowerStationFortran */
 #endif /* ....Fortran */
 
+// Jorn - ifort /iface:default specifies uppercase names
+#undef CFC_
+#define CFC_(UN,LN)            UN           /* Uppercase FORTRAN symbols.     */
+
 #define fcallsc(UN,LN)               orig_fcallsc(UN,LN)
 #define preface_fcallsc(P,p,UN,LN)   CFC_(_(P,UN),_(p,LN))
 #define  append_fcallsc(P,p,UN,LN)   CFC_(_(UN,P),_(LN,p))

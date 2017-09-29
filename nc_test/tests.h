@@ -35,7 +35,7 @@
 /* FLT_MAX < X_FLOAT_MAX */
 #define X_FLOAT_MAX	FLT_MAX
 #else
-#define X_FLOAT_MAX	3.40282347e+38f
+#define X_FLOAT_MAX	3.402823466e+38f
 #endif
 #define X_FLOAT_MIN	(-X_FLOAT_MAX)
 #if CRAYFLOAT

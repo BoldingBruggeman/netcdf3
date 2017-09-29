@@ -225,6 +225,8 @@ typedef enum {
 #include <io.h>
 #define lseek _lseeki64
 #define off_t __int64
+#define _off_t off_t
+#define _OFF_T_DEFINED
 #define stat __stat64
 #define fstat _fstat64
 #else

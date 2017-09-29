@@ -44,6 +44,8 @@ typedef unsigned char uchar;
 #include <io.h>
 #define lseek _lseeki64
 #define off_t __int64
+#define _off_t off_t
+#define _OFF_T_DEFINED
 #endif	/* defined(DLL_NETCDF) */
 
 /*

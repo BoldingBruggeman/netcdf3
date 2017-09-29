@@ -3,7 +3,7 @@
  *   See netcdf/COPYRIGHT file for copying and redistribution conditions.
  *   $Header: /upc/share/CVS/netcdf-3/ncgen/genlib.c,v 1.49 2008/05/15 14:53:43 russ Exp $
  *********************************************************************/
-
+#define snprintf _snprintf
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
